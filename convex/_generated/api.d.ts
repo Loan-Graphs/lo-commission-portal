@@ -15,6 +15,10 @@ import type {
 } from "convex/server";
 import type * as lenders from "../lenders.js";
 import type * as loans from "../loans.js";
+import type * as plaid from "../plaid.js";
+import type * as puzzle from "../puzzle.js";
+import type * as quickbooks from "../quickbooks.js";
+import type * as tenants from "../tenants.js";
 import type * as transactions from "../transactions.js";
 
 /**
@@ -28,6 +32,10 @@ import type * as transactions from "../transactions.js";
 declare const fullApi: ApiFromModules<{
   lenders: typeof lenders;
   loans: typeof loans;
+  plaid: typeof plaid;
+  puzzle: typeof puzzle;
+  quickbooks: typeof quickbooks;
+  tenants: typeof tenants;
   transactions: typeof transactions;
 }>;
 export declare const api: FilterApi<
